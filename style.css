@@ -1,0 +1,38 @@
+:root{
+    --text-color:hsla(0, 0%, 100%, 1);
+    --background-color:hsla(229, 47%, 17%, 1);
+
+    --fontWeight-regular:300;
+    --fontWeight-semi-bold:400;
+    --fontWeight-bold:700;
+    
+
+}
+
+
+
+
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  img, svg{
+    max-width: 100%;
+    display:block;
+  }
+
+
+
+  body{
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-family: "Mukta", Arial;
+    font-weight: var(--fontWeight-regular);
+    font-size: 18px;
+  }
+
