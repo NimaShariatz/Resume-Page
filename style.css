@@ -16,8 +16,6 @@
     --menu-image-border: rgba(255, 255, 255, 0.15);
     --menu-image-background: #171e40;
 
-    --menu-icon-onhover:white;
-    --menu-onhover-icon: #171e40, #222f67, #2d4190, #3a54bc, #4967e9;
 
 
 
@@ -96,7 +94,7 @@ body {
 
 .option_svg{
   fill:var(--menu-image-fill);
-  transition: fill 170ms linear;
+  transition: all 110ms linear;
   border-radius: 8px;
   padding: 10px;
   border-color:transparent;
@@ -109,9 +107,7 @@ body {
 .option_svg:hover{
   border-color: transparent;
   border-width:0;
-  outline: 2px solid aliceblue;
-  fill:var(--menu-icon-onhover);
-  background: linear-gradient(var(--menu-onhover-icon));
+  fill:aliceblue;
 }
 
 
