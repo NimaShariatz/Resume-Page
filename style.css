@@ -1,11 +1,25 @@
 :root{
-    --text-color:hsla(0, 0%, 100%, 1);
-    --background-color:hsla(229, 47%, 17%, 1);
+    --text-color:aliceblue;
+    --background-color:#171e40;
+
+    --green:#7afab4;
+    --lighterColor:#4967e9;
 
     --fontWeight-regular:300;
     --fontWeight-semi-bold:400;
     --fontWeight-bold:700;
     
+
+
+
+    --menu-image-fill: #4967e9;
+    --menu-image-border: rgba(255, 255, 255, 0.15);
+    --menu-image-background: #171e40;
+
+    --menu-icon-onhover:white;
+    --menu-onhover-icon: #171e40, #222f67, #2d4190, #3a54bc, #4967e9;
+
+
 
 }
 
@@ -16,23 +30,101 @@
 
 
 *, *::before, *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
   img, svg{
-    max-width: 100%;
-    display:block;
-  }
+  max-width: 100%;
+  display:block;
+}
 
 
 
-  body{
-    color: var(--text-color);
-    background-color: var(--background-color);
-    font-family: "Mukta", Arial;
-    font-weight: var(--fontWeight-regular);
-    font-size: 18px;
-  }
+  /* for scrollbar*/
+::-webkit-scrollbar {
+  width: 5px;
+    
+}
+  
+::-webkit-scrollbar-thumb {
+  background-color: 	#7afab4;
+  border-radius: 2px;
+}
+  
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+  /* for scrollbar*/
+
+
+
+body {
+  color: var(--text-color);
+  background-image: linear-gradient(to right top, #161d3e, #161d3e, #171d3f, #171e3f, #171e3f, #171e3f, #171e3f, #171e3f, #171e3f, #171d3f, #161d3e, #161d3e);
+  font-family: "Mukta", Arial;
+  font-weight: var(--fontWeight-regular);
+  font-size: 18px;
+}
+
+
+.timeline_column{
+  width:15em;
+  min-width:240px;
+}
+
+.timeline{
+  width:2px;
+  height: 100%;
+  margin-left: 100px;
+  background-color: rgba(255, 255, 255, 0.15);
+
+
+
+}
+
+
+.timeline_list{
+  position:fixed;
+  left:20px;
+}
+
+.timeline_list li{
+  margin-top: 30px;
+}
+
+.option_svg{
+  fill:var(--menu-image-fill);
+  transition: fill 170ms linear;
+  border-radius: 8px;
+  padding: 10px;
+  border-color:transparent;
+  border-style: solid;
+  border-width:2px;
+  background: var(--menu-image-background);
+  cursor: pointer;
+}
+
+.option_svg:hover{
+  border-color: transparent;
+  border-width:0;
+  outline: 2px solid aliceblue;
+  fill:var(--menu-icon-onhover);
+  background: linear-gradient(var(--menu-onhover-icon));
+}
+
+
+
+
+
+
+
+
+
+.text_column{
+  height:1900px;
+
+}
+
 
