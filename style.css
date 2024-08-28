@@ -31,6 +31,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  list-style-type: none;
+
 }
 
   img, svg{
@@ -109,6 +111,27 @@ body {
   border-width:0;
   fill:aliceblue;
 }
+
+
+
+
+
+.Education_section{
+ display: block;
+}
+
+.Projects_section{
+  display: none;
+}
+
+.Professional_section{
+  display: none;
+}
+
+.Aboutme_section{
+  display: none;
+}
+
 
 
 
