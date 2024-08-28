@@ -96,7 +96,7 @@ body {
 
 .option_svg{
   fill:var(--menu-image-fill);
-  transition: all 110ms linear;
+  transition: all 90ms ease-out;
   border-radius: 8px;
   padding: 10px;
   border-color:transparent;
@@ -116,19 +116,19 @@ body {
 
 
 
-.Education_section{
- display: block;
+#Education_section{
+  display: block;
 }
 
-.Projects_section{
+#Projects_section{
   display: none;
 }
 
-.Professional_section{
+#Professional_section{
   display: none;
 }
 
-.Aboutme_section{
+#Aboutme_section{
   display: none;
 }
 
@@ -142,7 +142,7 @@ body {
 
 
 .text_column{
-  height:1900px;
+  height:100vh;
 
 }
 
