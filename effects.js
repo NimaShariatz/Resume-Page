@@ -1,9 +1,6 @@
 var options = document.getElementsByClassName("option_svg");
 
-var education_option  = options[0];
-var projects_option  = options[1];
-var professional_option  = options[2];
-var aboutme_option = options[3];
+options[0].classList.add("chosen_option");
 
 
 
@@ -18,48 +15,48 @@ var currentSection = 0;
 var previousSection = 0;
 
 
-function clear_current(current){
+function display_new(current){
     sections[current].style.display = "block"
     sections[previousSection].style.display = "none"
 
+    options[current].classList.add("chosen_option");
 
+    options[previousSection].classList.remove("chosen_option");
 }
 
 
 
 
-education_option.addEventListener("click", function(){
-    console.log("ed is clicked");
+options[0].addEventListener("click", function(){
     previousSection = currentSection;
     if(currentSection!=0){
         currentSection=0;
-        clear_current(currentSection, previousSection);
+        display_new(currentSection, previousSection);
     }
-    
+
+
 
 
 });
 
 
 
-projects_option.addEventListener("click", function(){
-    console.log("proj is clicked");
+options[1].addEventListener("click", function(){
     previousSection = currentSection;
     if(currentSection!=1){
         currentSection=1;
-        clear_current(currentSection, previousSection);
+        display_new(currentSection, previousSection);
     }
 
 
 });
 
 
-professional_option.addEventListener("click", function(){
-    console.log("prof is clicked");
+options[2].addEventListener("click", function(){
     previousSection = currentSection;
     if(currentSection!=2){
         currentSection=2;
-        clear_current(currentSection, previousSection);
+        display_new(currentSection, previousSection);
     }
     
 
@@ -67,12 +64,11 @@ professional_option.addEventListener("click", function(){
 });
 
 
-aboutme_option.addEventListener("click", function(){
-    console.log("about is clicked");
+options[3].addEventListener("click", function(){
     previousSection = currentSection;
     if(currentSection!=3){
         currentSection=3;
-        clear_current(currentSection, previousSection);
+        display_new(currentSection, previousSection);
     }
 
 
