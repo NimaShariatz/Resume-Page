@@ -1,3 +1,34 @@
+
+
+@font-face {
+  font-family: "Arial - modified";
+  size-adjust: 92%;
+  
+  src: local(Arial);
+}
+
+@font-face { /*see https://www.youtube.com/watch?v=zK-yy6C2Nck&t=108s*/
+font-family: "mukta";
+src: url('assets/fonts/mukta-regular-webfont.woff2') format('woff2'),
+url('assets/fonts/mukta-regular-webfont.woff') format('woff');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 :root{
     --text-color:aliceblue;
     --background-color:#171e40;
@@ -69,7 +100,7 @@
 body {
   color: var(--text-color);
   background-image: linear-gradient(to right top, #161d3e, #161d3e, #171d3f, #171e3f, #171e3f, #171e3f, #171e3f, #171e3f, #171e3f, #171d3f, #161d3e, #161d3e);
-  font-family: "Mukta", Arial;
+  font-family: "outfit", "mukta", "Arial - modified";
   font-weight: var(--fontWeight-regular);
   font-size: 18px;
   line-height: 1.2;
