@@ -234,28 +234,48 @@ body {
   color:var(--color5);
 }
 
-#Education_section{
-  display: block;
-}
+
+
 
 .portrait_img{
   object-fit:cover;
   border-radius:50%;
 }
 
+
+
+
+.appear{
+  transition: visibility 0s, opacity 300ms linear;
+}
+
+.dissappear{
+  transition: visibility 0s 300ms, opacity 300ms linear;
+}
+
+
+#Education_section{
+  visibility: hidden;
+  opacity:0;
+}
+
+
 #Projects_section{
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 #Professional_section{
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+
 }
 
 #Aboutme_section{
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+
 }
-
-
 
 
 

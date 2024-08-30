@@ -1,5 +1,4 @@
 var options = document.getElementsByClassName("option_svg");
-options[0].classList.add("chosen_option");//so education starts as white
 
 var nodes = document.getElementsByClassName("node");
 
@@ -24,13 +23,30 @@ const sections = [document.getElementById("Education_section"), document.getElem
     document.getElementById("Aboutme_section")
 ];
 
+options[0].classList.add("chosen_option");//so education starts as white
+sections[0].classList.add("appear")
+sections[0].style.visibility="visible";
+sections[0].style.opacity="1";
+
 var currentSection = 0;
 var previousSection = 0;
 
 
 function display_new(current){
-    sections[current].style.display = "block"
-    sections[previousSection].style.display = "none"
+    sections[current].classList.remove("appear")
+    sections[previousSection].classList.remove("appear")
+    sections[current].classList.remove("dissappear")
+    sections[previousSection].classList.remove("dissappear")
+
+
+    sections[current].classList.add("appear");
+    sections[current].style.visibility = "visible";
+    sections[current].style.opacity = "1";
+
+    sections[previousSection].classList.add("dissappear");
+    sections[previousSection].style.visibility = "hidden";
+    sections[previousSection].style.opacity = "0";
+
 
     options[current].classList.add("chosen_option");
 
