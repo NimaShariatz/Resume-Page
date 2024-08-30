@@ -3,10 +3,19 @@ options[0].classList.add("chosen_option");//so education starts as white
 
 var nodes = document.getElementsByClassName("node");
 
-for (i = 0; i < nodes.length; i++) {
-    nodes[i].style.outline = "var(--border_thickness) solid var(--color4)"
-    nodes[i].style.opacity = "1"
+var timeline_sections = document.getElementsByClassName("timeline_sect");
 
+
+
+
+var delay = 200;
+for (i = 0; i < nodes.length; i++) {
+    nodes[i].style.outline = "var(--border_thickness) solid var(--color4)";
+    timeline_sections[i].style.opacity = "1";
+    timeline_sections[i].style.transitionDelay = delay.toString() + "ms";
+    nodes[i].style.transitionDelay = delay.toString() + "ms";
+
+    delay = delay + 100;
 }
 
 
