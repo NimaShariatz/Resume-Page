@@ -75,32 +75,29 @@ body {
   line-height: 1.2;
 }
 
+.text_section{
+  margin-left: 300px;
+}
 
 .timeline_column{
-  width:15em;
-  min-width:240px;
-}
-
-.timeline{
-  width:2px;
+  width:120px;
+  position: fixed;
+  top: 0;
+  left:10px;
   height: 100%;
-  margin-left: 100px;
-  background-color: rgba(255, 255, 255, 0.15);
-
-
-
+  border-width: 0 4px 0 0;
+  border-color: rgba(255, 255, 255, 0.15);;
+  border-style: solid;
 }
-
 
 .timeline_list{
-  position:fixed;
-  left:20px;
   list-style-type: none;
-
 }
+
 
 .timeline_list li{
   margin-top: 30px;
+  margin-left: 15px;
 }
 
 .option_svg{
@@ -122,6 +119,138 @@ body {
 }
 
 
+.node{
+  --w:8px;
+  --border_thickness: 7px;
+  opacity: 0;
+
+  outline:0 solid #ced6f7;
+
+  height: 8px;
+  width: var(--w);
+  background-color: #ced6f7;
+  border-radius: 50%;
+  position: absolute;
+
+  transition:outline 300ms ease-out, opacity 420ms linear;
+
+
+
+
+  left:124px;
+
+}
+
+
+
+
+.node:nth-child(1){
+  margin-top:40px;
+  transition-delay: 200ms;
+}
+
+.node:nth-child(2){
+  margin-top:100px;
+  transition-delay: 300ms;
+
+
+}
+
+.node:nth-child(3){
+  margin-top:160px;
+  transition-delay: 400ms;
+
+}
+
+.node:nth-child(4){
+  margin-top:220px;
+  transition-delay: 500ms;
+
+}
+
+.node:nth-child(5){
+  margin-top:280px;
+  transition-delay: 600ms;
+
+}
+
+.node:nth-child(6){
+  margin-top:340px;
+  transition-delay: 700ms;
+
+}
+
+.node:nth-child(7){
+  margin-top:400px;
+  transition-delay: 800ms;
+
+}
+
+.node:nth-child(8){
+  margin-top:460px;
+  transition-delay: 900ms;
+
+}
+
+.node:nth-child(9){
+  margin-top:520px;
+  transition-delay: 1000ms;
+
+}
+
+.node:nth-child(10){
+  margin-top:580px;
+  transition-delay: 1100ms;
+
+}
+
+.node:nth-child(11){
+  margin-top:640px;
+  transition-delay: 1200ms;
+
+}
+
+.node:nth-child(12){
+  margin-top:700px;
+  transition-delay: 1300ms;
+
+}
+
+.node:nth-child(13){
+  margin-top:760px;
+  transition-delay: 1400ms;
+
+}
+
+
+
+
+.node_icon, .node_icon_python, .node_icon_c{
+  position:absolute;
+  left:150px;
+  fill: var(--color2);
+  width: 45px;
+  height: 45px;
+}
+
+.node_icon_python{
+  margin-top: 20px;
+}
+
+.node_icon_c{
+  margin-top: 81px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .section-title{
   letter-spacing: 1px;
   font-size: 55px;
@@ -132,7 +261,7 @@ body {
 }
 
 .section-subtitle{
-  margin-top: 12vw;
+  margin-top: 10vw;
   letter-spacing: 1px;
   word-spacing: 4px;
   font-size: 21px;
@@ -186,11 +315,5 @@ body {
 
 
 
-
-
-.text_column{
-  height:100vh;
-
-}
 
 

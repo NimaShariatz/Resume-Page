@@ -1,9 +1,13 @@
 var options = document.getElementsByClassName("option_svg");
+options[0].classList.add("chosen_option");//so education starts as white
 
-options[0].classList.add("chosen_option");
+var nodes = document.getElementsByClassName("node");
 
+for (i = 0; i < nodes.length; i++) {
+    nodes[i].style.outline = "var(--border_thickness) solid var(--color4)"
+    nodes[i].style.opacity = "1"
 
-
+}
 
 
 const sections = [document.getElementById("Education_section"), document.getElementById("Projects_section"), 
