@@ -246,10 +246,12 @@ body {
 
 
 .appear{
+  transition-delay: 100ms;
   transition: visibility 0s, opacity 300ms linear;
 }
 
 .dissappear{
+  transition-delay: 100ms;
   transition: visibility 0s 300ms, opacity 300ms linear;
 }
 
@@ -257,24 +259,29 @@ body {
 #Education_section{
   visibility: hidden;
   opacity:0;
+  /*pick the largest one to not be absolute*/
 }
 
 
 #Projects_section{
   visibility: hidden;
   opacity: 0;
+  position: absolute;
+  top:0;
 }
 
 #Professional_section{
   visibility: hidden;
   opacity: 0;
-
+  position: absolute;
+  top:0;
 }
 
 #Aboutme_section{
   visibility: hidden;
   opacity: 0;
-
+  position: absolute;
+  top:0;
 }
 
 
