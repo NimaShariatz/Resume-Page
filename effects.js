@@ -68,7 +68,7 @@ options[0].addEventListener("click", function(){
     for (var i,i = 0; i < timeline_sections.length; i++){
         timeline_sections[i].style.opacity="1";
         timeline_sections[i].style.marginTop = marginTop.toString() + "px";
-        marginTop = marginTop + 60;
+        marginTop = marginTop + 50;
     }
 
     
@@ -89,11 +89,13 @@ options[1].addEventListener("click", function(){
     for (var i,i = 0; i < timeline_sections.length; i++){
         if((i!==0) && (i!==5) && (i!==6) && (i!==7) && (i!==8) && (i!==9) && (i!==10) && (i!==11) && (i!==12)){
             timeline_sections[i].style.opacity="0";
+        }else{
+            timeline_sections[i].style.opacity="1";
         }
 
         if((i==0) || (i==5) || (i==6) || (i==7) || (i==8) || (i==9) || (i==10) || (i==11) || (i==12)){
             timeline_sections[i].style.marginTop = marginTop.toString() + "px";
-            marginTop = marginTop + 80;
+            marginTop = marginTop + 60;
         }
 
     }
@@ -110,6 +112,21 @@ options[2].addEventListener("click", function(){
         display_new(currentSection, previousSection);
     }
     
+
+    var marginTop = 40;
+    for (var i,i = 0; i < timeline_sections.length; i++){
+        if( (i!==7) && (i!==8) && (i!==9)){
+            timeline_sections[i].style.opacity="0";
+        }else{
+            timeline_sections[i].style.opacity="1";
+        }
+
+        if((i==7) || (i==8) || (i==9)){
+            timeline_sections[i].style.marginTop = marginTop.toString() + "px";
+            marginTop = marginTop + 60;
+        }
+
+    }
 
 
 });
