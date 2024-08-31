@@ -7,7 +7,6 @@ var timeline_sections = document.getElementsByClassName("timeline_sect");
 
 
 
-
 var delay = 200;
 for (var i,i = 0; i < nodes.length; i++) {
     nodes[i].style.outline = "var(--border_thickness) solid var(--color4)";
@@ -65,6 +64,14 @@ options[0].addEventListener("click", function(){
         display_new(currentSection, previousSection);
     }
 
+    var marginTop = 40;
+    for (var i,i = 0; i < timeline_sections.length; i++){
+        timeline_sections[i].style.opacity="1";
+        timeline_sections[i].style.marginTop = marginTop.toString() + "px";
+        marginTop = marginTop + 60;
+    }
+
+    
 
 
 
@@ -78,6 +85,19 @@ options[1].addEventListener("click", function(){
         currentSection=1;
         display_new(currentSection, previousSection);
     }
+    var marginTop = 40;
+    for (var i,i = 0; i < timeline_sections.length; i++){
+        if((i!==0) && (i!==5) && (i!==6) && (i!==7) && (i!==8)){
+            timeline_sections[i].style.opacity="0";
+        }
+
+        if((i==0) || (i==5) || (i==6) || (i==7) || (i==8)){
+            timeline_sections[i].style.marginTop = marginTop.toString() + "px";
+            marginTop = marginTop + 80;
+        }
+
+    }
+    
 
 
 });
@@ -104,3 +124,37 @@ options[3].addEventListener("click", function(){
 
 
 });
+
+
+
+
+
+function hover_out_projects(card_number, icons_to_change){
+    var icons = document.getElementsByClassName('node_icon');
+
+    
+    if(card_number == 1){
+
+        for (var i,i = 0; i < icons_to_change.length; i++){
+            icons[icons_to_change[i]].style.fill = "var(--color2)";
+        }
+    }
+}
+
+
+
+
+
+function hover_over_projects(card_number, icons_to_change){
+    var icons = document.getElementsByClassName('node_icon');
+
+    
+    if(card_number == 1){
+
+        for (var i,i = 0; i < icons_to_change.length; i++){
+            icons[icons_to_change[i]].style.fill = "var(--green)";
+        }
+    }
+
+
+}

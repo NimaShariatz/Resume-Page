@@ -212,8 +212,8 @@
                 <div id="Education_section">
                     <p class="section-subtitle">TECHNICAL EXPERIENCE</p>
                     <p class="section-title">EDUCATION</p>
-                    <div style="background-color:var(--color6); border-radius:10px; padding-right:15px; padding-left:15px; padding-top:15px; margin-top:20px">
-                        <p style="margin-bottom:10px; text-decoration: underline;">University of Alberta BSc. in Computing Science</p>
+                    <div class="list_container">
+                        <p style="color:var(--green); font-size:24px; font-weight:var(--fontWeight-bold);">University of Alberta BSc. in Computing Science</p>
 
                         <ul class="list">
                             <li>
@@ -240,7 +240,35 @@
                 </div>
                 
                 <div id="Projects_section">
-                    <p>timeline consists of logos for languages and frameworks. when hovered, the relevant card changes to green</p>
+                    <p class="section-subtitle">Notable works with frameworks and languages</p>
+                    <p class="section-title">Projects</p>
+
+                    <div onmouseenter="hover_over_projects(1, [6, 7, 8])" onmouseleave="hover_out_projects(1, [6, 7, 8])"  class="list_container_projects">
+                        <div style="display:flex;">
+                            <a href="https://2024.igem.wiki/ualberta/" style="color:var(--green); font-size:24px; font-weight:var(--fontWeight-bold); text-decoration:underline;">ReneWool</a>
+                            <p style="margin-left:auto; margin-top:auto; margin-bottom:auto;">May 2024 – October 2024</p>
+                        </div>
+
+                        <ul class="list">
+                            <li>
+                                Created a wiki for the 2024 University of Alberta iGEM team
+                            </li>
+                            <li>
+                                A project involving multiple disciplines, with the objective of the wiki team being to produce 
+                                a public website which serves to showcase the science team’s findings in a novel way
+                            </li>
+                            <li>
+                                Understanding of GitHub usage and code sharing
+                            </li>
+                            <li>
+                                Served as leader and main contributor for the development of the wiki. This involves creating the functional features that the user 
+                                interacts with and the design queues in formulating a pleasant experience
+                            </li>
+                        
+                        </ul>
+                    </div>
+
+
                 </div>
 
                 <div id="Professional_section">
