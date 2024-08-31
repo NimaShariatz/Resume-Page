@@ -225,14 +225,19 @@ body {
 
 }
 
-.link_icon{
+.link_icon, .profile_section_icons{
   fill: var(--color2);
   width: 30px;
   height: 30px;
   transition: fill 300ms linear;
 }
-.link_icon:hover{
+.link_icon:hover, .profile_section_icons:hover{
   fill: var(--color5);
+}
+
+.profile_section_icons{
+  width: 40px;
+  height: 40px;
 }
 
 
@@ -326,8 +331,11 @@ body {
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  top:0;
+  top:5vw;
   padding-bottom: 30px;
+  background-color:var(--color6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
 
 }
 
@@ -337,7 +345,13 @@ body {
   color:var(--color5);
 }
 
+.date{
 
+  margin-left:auto;
+  margin-top:auto;
+  margin-bottom:auto;
+  opacity:0.6;
+}
 
 
 

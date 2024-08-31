@@ -57,6 +57,16 @@ function display_new(current){
 
 
 
+
+
+
+
+
+
+
+
+
+
 options[0].addEventListener("click", function(){
     previousSection = currentSection;
     if(currentSection!=0){
@@ -139,8 +149,41 @@ options[3].addEventListener("click", function(){
         display_new(currentSection, previousSection);
     }
 
+    
+    var marginTop = 40;
+    for (var i,i = 0; i < timeline_sections.length; i++){
+        if( (i!==7) && (i!==8) && (i!==9) && (i!==11)){
+            timeline_sections[i].style.opacity="0";
+        }else{
+            timeline_sections[i].style.opacity="1";
+        }
+
+        if((i==7) || (i==8) || (i==9) || (i==11)){
+            timeline_sections[i].style.marginTop = marginTop.toString() + "px";
+            marginTop = marginTop + 60;
+        }
+
+    }
+
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
