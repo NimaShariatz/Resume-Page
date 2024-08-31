@@ -225,7 +225,15 @@ body {
 
 }
 
-
+.link_icon{
+  fill: var(--color2);
+  width: 30px;
+  height: 30px;
+  transition: fill 300ms linear;
+}
+.link_icon:hover{
+  fill: var(--color5);
+}
 
 
 
@@ -245,7 +253,7 @@ body {
 }
 
 .section-subtitle{
-  margin-top: 10vw;
+  margin-top: 5vw;
   letter-spacing: 1px;
   word-spacing: 4px;
   font-size: 21px;
